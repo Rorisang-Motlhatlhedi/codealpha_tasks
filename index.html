@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<div class="gallery">
+  <img src="city lights.jpg" onclick="openLightbox(0)">
+  <img src="sky scrapers.jpg" onclick="openLightbox(1)">
+  <img src="nature.jpg" onclick="openLightbox(2)">
+  <img src="street photography.jpg" onclick="openLightbox(3)">
+</div>
+
+<!-- Lightbox -->
+<div id="lightbox">
+  <span class="close" onclick="closeLightbox()">&times;</span>
+  <img id="lightbox-img">
+  <div class="nav">
+    <button onclick="changeSlide(-1)">❮</button>
+    <button onclick="changeSlide(1)">❯</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
